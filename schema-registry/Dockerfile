@@ -17,4 +17,5 @@ RUN ["chown", "-R", "confluent:confluent", "/etc/schema-registry/schema-registry
 RUN ["chmod", "+x", "/usr/local/bin/schema-registry-docker.sh"]
 
 USER confluent
-ENTRYPOINT ["/usr/local/bin/schema-registry-docker.sh"]
+
+CMD ["/usr/local/bin/schema-registry-docker.sh"]
