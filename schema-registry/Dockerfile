@@ -6,7 +6,7 @@
 #   docker run -d --name schema-registry --link zookeeper:zookeeper --link kafka:kafka \
 #       --env SCHEMA_REGISTRY_AVRO_COMPATIBILITY_LEVEL=none confluent/schema-registry
 
-FROM confluent/platform
+FROM confluent/platform:2.0.1
 
 MAINTAINER contact@confluent.io
 
